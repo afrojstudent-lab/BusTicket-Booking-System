@@ -1,0 +1,100 @@
+<web-app>
+
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>servlet.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddBus</servlet-name>
+		<servlet-class>servlet.AddBusServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddBus</servlet-name>
+		<url-pattern>/addBus</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>View</servlet-name>
+		<servlet-class>servlet.ViewBusServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>View</servlet-name>
+		<url-pattern>/view</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Book</servlet-name>
+		<servlet-class>servlet.BookSeatServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Book</servlet-name>
+		<url-pattern>/book</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Edit</servlet-name>
+		<servlet-class>servlet.EditBusServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Edit</servlet-name>
+		<url-pattern>/edit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Update</servlet-name>
+		<servlet-class>servlet.UpdateBusServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Update</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>MyBookings</servlet-name>
+		<servlet-class>servlet.MyBookingsServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MyBookings</servlet-name>
+		<url-pattern>/myBookings</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>servlet.LogoutServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CancelBooking</servlet-name>
+		<servlet-class>servlet.CancelBookingServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CancelBooking</servlet-name>
+		<url-pattern>/cancelBooking</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>
