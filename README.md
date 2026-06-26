@@ -1,142 +1,155 @@
-🚌 Bus Ticket Booking System
+# 🚌 Bus Ticket Booking System
 
-📌 Project Overview
+A web-based Bus Ticket Booking System developed using **Java, JSP, Servlet, JDBC, MySQL, Maven, and Apache Tomcat**. The application allows users to register, log in, view available buses, book seats, manage bookings, and enables administrators to manage bus details.
 
-The Bus Ticket Booking System is a web-based application that allows users to search for buses, book tickets, and manage their bookings.It is designed to simulate a real-world online ticket booking platform with user authentication and database integration.
+---
 
-🚀 Features
+## 🚀 Features
 
-User Registration and Login
+* User Registration & Login
+* View Available Buses
+* Search Bus Routes
+* Book Bus Seats
+* View My Bookings
+* Cancel Booking
+* Admin Bus Management (Add, Edit, Delete)
+* MySQL Database Integration
+* Responsive JSP-based Interface
 
-Search Buses based on source and destination
+---
 
-View available buses and seat details
+## 🛠 Technologies Used
 
-Book tickets
+* Java
+* JSP
+* Servlet
+* JDBC
+* MySQL 8.x
+* Maven
+* Apache Tomcat 8.5+
+* HTML
+* CSS
+* Eclipse IDE
 
-View booking history
+---
 
-Cancel bookings
+## 📁 Project Structure
 
-Admin can manage bus details (optional if implemented)
-
-🛠️ Technologies Used
-
-Java
-
-Servlet
-
-JSP
-
-JDBC
-
-MySQL
-
-HTML, CSS
-
-Apache Tomcat Server
-
-Eclipse IDE
-
-Git & GitHub
-
-🧩 Project Structure
-
-Bus_Booking/
-│── src/
-│   ├── controller/
-│   ├── dao/
-│   ├── model/
-│   └── util/
+```
+BusTicket-Booking-System/
 │
-│── WebContent/
-│   ├── jsp/
-│   ├── css/
-│   ├── images/
-│   └── WEB-INF/
-│       └── web.xml
-│
-│── database/
+├── database/
 │   └── bus_booking.sql
 │
-│── screenshots/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   └── webapp/
 │
-│── README.md
+├── pom.xml
+├── README.md
+```
 
-⚙️ Setup Instructions
+---
 
-1. Clone the Repository
+## ⚙ Prerequisites
 
-git clone https://github.com/yourusername/bus-booking-system.git
+Before running the project, install:
 
-2. Import into IDE
+* Java JDK 8 or above
+* Eclipse IDE
+* Apache Tomcat 8.5+
+* MySQL Server 8.x
+* Maven
 
-Open Eclipse IDE
+---
 
-Import → Existing Projects into Workspace
+## 🗄 Database Setup
 
-3. Configure Server
+Open MySQL Command Line or MySQL Workbench.
 
-Add Apache Tomcat Server
+Create and import the database:
 
-Deploy the project
+```sql
+SOURCE database/bus_booking.sql;
+```
 
-4. Database Setup
+Or manually:
 
-Open MySQL
-
-Create a database:
-
+```sql
 CREATE DATABASE bus_booking;
+USE bus_booking;
+```
 
-Import the SQL file:
+The SQL file automatically creates all required tables:
 
-bus_booking.sql
+* user
+* bus
+* booking
 
-5. Update Database Configuration
+and inserts sample bus records.
 
-Modify your DB connection in code:
+---
 
-URL = jdbc:mysql://localhost:3306/bus_booking
-USERNAME = root
-PASSWORD = your_password
+## 🔧 Database Configuration
 
-6. Run the Project
+Update `src/main/java/util/DBConnection.java`
 
-Start Tomcat Server
+```java
+static String url="jdbc:mysql://localhost:3306/bus_booking";
+static String user="root";
+static String pass="root";
+```
 
-Open browser:
+Replace the username and password according to your MySQL installation.
 
-http://localhost:8080/Bus_Booking
+---
 
-📷 Screenshots
+## ▶️ How to Run
 
-(Add your project screenshots here)
+1. Clone the repository
 
-Login Page
+```
+git clone https://github.com/afrojstudent-lab/BusTicket-Booking-System.git
+```
 
-Register Page
+2. Import the project into Eclipse as a Maven Project.
 
-Search Bus Page
+3. Configure Apache Tomcat Server.
 
-Booking Page
+4. Import the database using:
 
-🎯 Future Enhancements
+```
+database/bus_booking.sql
+```
 
-Online payment integration
+5. Run the project on Tomcat.
 
-Seat selection UI
+6. Open your browser:
 
-Email/SMS confirmation
+```
+http://localhost:8080/BusTicket-Booking-System/
+```
 
-REST API integration
+---
 
-Spring Boot migration
+## 📌 Database Tables
 
-👤 Author
+* user
+* bus
+* booking
 
-Seran M Java Full Stack Developer
+---
 
-📄 License
+## 👨‍💻 Author
 
-This project is for educational purposes.
+**Palak**
+
+GitHub:
+https://github.com/afrojstudent-lab
+
+---
+
+## 📄 License
+
+This project is developed for educational purposes.
